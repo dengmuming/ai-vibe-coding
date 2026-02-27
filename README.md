@@ -1,5 +1,7 @@
 # Vibe-Coding: Skills, Workflows & Rules
 
+[English](README.md) | [中文](README_zh.md)
+
 Vibe-coding is an intuition-driven, flow-oriented coding method that combines creativity with structure, focusing on smooth development rhythm and code quality. Its core is balancing intuitive coding with systematic execution for agile and creative programming.
 
 Core skills: intuitive problem-solving, rapid prototyping, adaptive logic, clean maintainable code, real-time debugging, and context-aware implementation. Workflows: enter focus, sketch core logic, code incrementally with testing, adjust by feedback, refine, and integrate smoothly.
