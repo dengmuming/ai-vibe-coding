@@ -43,7 +43,7 @@ Different AI coding assistants (Agent/Copilot) generally rely on specific direct
 
 *   **Google Antigravity**: Uses the `.agents` (or `.agent`) directory. It heavily utilizes this directory for structured `rules`, `skills`, and `workflows`.
     *   *Documentation*: [https://antigravity.google/docs/get-started](https://antigravity.google/docs/get-started)
-*   **Google Gemini CLI**: Mainly uses the `.gemini` directory for localized configuration and maintaining agent conversational state/brain.
+*   **Google Gemini CLI**: Uses the `.agents` directory for custom rules, skills, and workflows, while using the `.gemini` directory for maintaining conversational state.
     *   *Documentation*: [https://geminicli.com/docs/](https://geminicli.com/docs/)
 *   **GitHub Copilot**: Uses the `.github` directory (e.g., `.github/copilot-instructions.md`) to read custom repository instructions.
     *   *Documentation*: [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
