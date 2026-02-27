@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.2] - 2026-02-27
+
+### Changed
+- **Documentation**: Updated `README.md` to include a section on supported AI coding assistants (Google Antigravity, Google Gemini CLI, GitHub Copilot, Windsurf, Claude) and their respective context directories. Clarified that Gemini CLI uses the `.agents` directory for rules, skills, and workflows.
+
 ## [0.0.1] - 2026-02-27
 
 ### Added
