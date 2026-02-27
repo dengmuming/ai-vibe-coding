@@ -34,3 +34,18 @@ Workflows define step-by-step Standard Operating Procedures (SOPs) for common de
 *   **[init-feature.md](.agents/workflows/init-feature.md)** (`/init-feature`): Steps to review requirements, draft an implementation plan, create a branch, and set up code boilerplate.
 *   **[create-pull-request.md](.agents/workflows/create-pull-request.md)** (`/create-pull-request`): Finalizing work by running tests, formatting, creating semantic commits, pushing changes, and drafting PR descriptions.
 *   **[release.md](.agents/workflows/release.md)** (`/release`): Executing a release process by determining SemVer bumps, updating changelogs, and tagging Git repositories.
+
+---
+
+## 💻 Supported AI Coding Assistants
+
+Different AI coding assistants (Agent/Copilot) generally rely on specific directories to load their project-level rules, workflows, and prompts. Here is the mapping for mainstream AI assistants:
+
+*   **Google Antigravity**: Uses the `.agent` (or `.agents`) directory. It heavily utilizes this directory for structured `rules`, `skills`, and `workflows`.
+    *   *Documentation*: [Google DeepMind / Gemini](https://deepmind.google/technologies/gemini/)
+*   **GitHub Copilot**: Uses the `.github` directory (e.g., `.github/copilot-instructions.md`) to read custom repository instructions.
+    *   *Documentation*: [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
+*   **Windsurf (by Codeium)**: Uses the `.windsurf` directory to manage local rules and workspace context.
+    *   *Documentation*: [Windsurf Documentation](https://docs.codeium.com/windsurf)
+*   **Claude (Anthropic)**: Uses the `.claude` directory (or standard config files like `clinerules`) for repository-specific instructions.
+    *   *Documentation*: [Claude Documentation](https://docs.anthropic.com/claude/docs)
