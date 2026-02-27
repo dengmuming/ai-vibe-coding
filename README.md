@@ -41,7 +41,9 @@ Workflows define step-by-step Standard Operating Procedures (SOPs) for common de
 
 Different AI coding assistants (Agent/Copilot) generally rely on specific directories to load their project-level rules, workflows, and prompts. Here is the mapping for mainstream AI assistants:
 
-*   **Google Antigravity**: Uses the `.agent` (or `.agents`) directory. It heavily utilizes this directory for structured `rules`, `skills`, and `workflows`.
+*   **Google Antigravity**: Uses the `.agents` (or `.agent`) directory. It heavily utilizes this directory for structured `rules`, `skills`, and `workflows`.
+    *   *Documentation*: [https://antigravity.google/docs/get-started](https://antigravity.google/docs/get-started)
+*   **Google Gemini CLI**: Mainly uses the `.gemini` directory for localized configuration and maintaining agent conversational state/brain.
     *   *Documentation*: [Google DeepMind / Gemini](https://deepmind.google/technologies/gemini/)
 *   **GitHub Copilot**: Uses the `.github` directory (e.g., `.github/copilot-instructions.md`) to read custom repository instructions.
     *   *Documentation*: [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
