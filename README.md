@@ -12,30 +12,31 @@ Key rules: prioritize rhythm without sacrificing quality, keep structure clear, 
 
 ## 🤖 AI Agent Collaboration Framework
 
-This repository includes a comprehensive "AI Vibe Coding" framework located in the `.agents` directory. It provides AI agents with standard operating procedures (Rules), specific capabilities (Skills), and step-by-step processes (Workflows) to collaborate effectively and autonomously with software engineers.
+This repository includes a comprehensive "AI Vibe Coding" framework located in the `rules`, `skills`, and `workflows` directories. It provides AI agents with standard operating procedures (Rules), specific capabilities (Skills), and step-by-step processes (Workflows) to collaborate effectively and autonomously with software engineers.
 
-### 📜 Rules (`.agents/rules/`)
+### 📜 Rules (`rules/`)
 Rules define the core guidelines and constraints the AI should always follow when operating in this repository.
 
-*   **[01-general-behavior.md](.agents/rules/01-general-behavior.md)**: General behavioral principles including safety first, conciseness, proactivity, and step-by-step problem solving.
-*   **[02-code-style.md](.agents/rules/02-code-style.md)**: Standard code style guidelines focusing on consistency, naming conventions, and utilizing automated formatters.
-*   **[03-git-conventions.md](.agents/rules/03-git-conventions.md)**: Conventions for Git branching patterns and semantic commit messages.
-*   **[04-documentation.md](.agents/rules/04-documentation.md)**: Directions for writing precise code comments, API docstrings, and architectural descriptions.
+*   **[01-general-behavior.md](rules/01-general-behavior.md)**: General behavioral principles including safety first, conciseness, proactivity, and step-by-step problem solving.
+*   **[02-code-style.md](rules/02-code-style.md)**: Standard code style guidelines focusing on consistency, naming conventions, and utilizing automated formatters.
+*   **[03-git-conventions.md](rules/03-git-conventions.md)**: Conventions for Git branching patterns and semantic commit messages.
+*   **[04-documentation.md](rules/04-documentation.md)**: Directions for writing precise code comments, API docstrings, and architectural descriptions.
 
-### 🛠️ Skills (`.agents/skills/`)
+### 🛠️ Skills (`skills/`)
 Skills provide specialized methodologies the AI can read to perform complex tasks systematically.
 
-*   **[Code Review (`code_review/SKILL.md`)](.agents/skills/code_review/SKILL.md)**: A systematic approach to reviewing pull requests, checking logic, security, performance, and providing actionable feedback.
-*   **[Debugging (`debugging/SKILL.md`)](.agents/skills/debugging/SKILL.md)**: A diagnostic process to trace issues, formulate hypotheses, gather runtime info, and propose minimal side-effect fixes.
-*   **[Refactoring (`refactoring/SKILL.md`)](.agents/skills/refactoring/SKILL.md)**: Principles for restructuring code safely (DRY, Single Responsibility) without altering external behavior.
-*   **[Test Generation (`test_generation/SKILL.md`)](.agents/skills/test_generation/SKILL.md)**: Guidelines for writing comprehensive unit tests targeting happy paths, edge cases, and properly handling mocks.
+*   **[Code Review (`code_review/SKILL.md`)](skills/code_review/SKILL.md)**: A systematic approach to reviewing pull requests, checking logic, security, performance, and providing actionable feedback.
+*   **[Debugging (`debugging/SKILL.md`)](skills/debugging/SKILL.md)**: A diagnostic process to trace issues, formulate hypotheses, gather runtime info, and propose minimal side-effect fixes.
+*   **[Refactoring (`refactoring/SKILL.md`)](skills/refactoring/SKILL.md)**: Principles for restructuring code safely (DRY, Single Responsibility) without altering external behavior.
+*   **[Test Generation (`test_generation/SKILL.md`)](skills/test_generation/SKILL.md)**: Guidelines for writing comprehensive unit tests targeting happy paths, edge cases, and properly handling mocks.
 
-### 🔄 Workflows (`.agents/workflows/`)
+### 🔄 Workflows (`workflows/`)
 Workflows define step-by-step Standard Operating Procedures (SOPs) for common development actions. Users can invoke them to guide the AI, often via slash commands.
 
-*   **[init-feature.md](.agents/workflows/init-feature.md)** (`/init-feature`): Steps to review requirements, draft an implementation plan, create a branch, and set up code boilerplate.
-*   **[create-pull-request.md](.agents/workflows/create-pull-request.md)** (`/create-pull-request`): Finalizing work by running tests, formatting, creating semantic commits, pushing changes, and drafting PR descriptions.
-*   **[release.md](.agents/workflows/release.md)** (`/release`): Executing a release process by determining SemVer bumps, updating changelogs, and tagging Git repositories.
+*   **[git-feature.md](workflows/git-feature.md)** (`/git-feature`): Steps to review requirements, draft an implementation plan, create a branch, and set up code boilerplate for a new feature.
+*   **[git-commit.md](workflows/git-commit.md)** (`/git-commit`): Standardized workflow for staging, committing, and pushing code changes using semantic commit messages.
+*   **[git-release.md](workflows/git-release.md)** (`/git-release`): Executing a release process by determining SemVer bumps, creating tags, and pushing to the remote.
+*   **[review.md](workflows/review.md)** (`/review`): Review code changes for bugs, security issues, and improvements.
 
 ---
 

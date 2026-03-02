@@ -13,30 +13,31 @@ Vibe-coding 是一种直觉驱动、注重心流的编码方法，它将创造�
 
 ## 🤖 AI 智能体协作框架
 
-本仓库在 `.agents` 目录下包含了一个全面的 "AI Vibe Coding" 框架。它为 AI 智能体提供了标准操作程序（规则）、特定能力（技能）和分步流程（工作流），以便与软件工程师进行高效、自主的协作。
+本仓库在 `rules`、`skills` 和 `workflows` 目录下包含了一个全面的 "AI Vibe Coding" 框架。它为 AI 智能体提供了标准操作程序（规则）、特定能力（技能）和分步流程（工作流），以便与软件工程师进行高效、自主的协作。
 
-### 📜 规则 (`.agents/rules/`)
+### 📜 规则 (`rules/`)
 规则定义了 AI 在本仓库中操作时应始终遵循的核心准则和约束。
 
-*   **[01-general-behavior.md](.agents/rules/01-general-behavior.md)**：一般行为原则，包括安全第一、简洁明了、主动积极和逐步解决问题。
-*   **[02-code-style.md](.agents/rules/02-code-style.md)**：标准代码风格指南，侧重于一致性、命名约定以及利用自动化格式化工具。
-*   **[03-git-conventions.md](.agents/rules/03-git-conventions.md)**：Git 分支模式和语义化提交信息的约定。
-*   **[04-documentation.md](.agents/rules/04-documentation.md)**：关于编写精确的代码注释、API 文档字符串和架构描述的指导。
+*   **[01-general-behavior.md](rules/01-general-behavior.md)**：一般行为原则，包括安全第一、简洁明了、主动积极和逐步解决问题。
+*   **[02-code-style.md](rules/02-code-style.md)**：标准代码风格指南，侧重于一致性、命名约定以及利用自动化格式化工具。
+*   **[03-git-conventions.md](rules/03-git-conventions.md)**：Git 分支模式和语义化提交信息的约定。
+*   **[04-documentation.md](rules/04-documentation.md)**：关于编写精确的代码注释、API 文档字符串和架构描述的指导。
 
-### 🛠️ 技能 (`.agents/skills/`)
+### 🛠️ 技能 (`skills/`)
 技能提供了专业的方法论，AI 可以通过阅读这些方法论系统地执行复杂任务。
 
-*   **[代码审查 (`code_review/SKILL.md`)](.agents/skills/code_review/SKILL.md)**：一种审查拉取请求 (PR) 的系统方法，检查逻辑、安全性、性能，并提供可操作的反馈。
-*   **[调试 (`debugging/SKILL.md`)](.agents/skills/debugging/SKILL.md)**：诊断过程，用于追踪问题、提出假设、收集运行时信息，并提出副作用最小的修复方案。
-*   **[重构 (`refactoring/SKILL.md`)](.agents/skills/refactoring/SKILL.md)**：在不改变外部行为的情况下安全重构代码（DRY 原则、单一职责原则）的原则。
-*   **[测试生成 (`test_generation/SKILL.md`)](.agents/skills/test_generation/SKILL.md)**：编写全面单元测试的指南，涵盖正常路径 (happy path)、边缘情况，并正确处理模拟 (mocks)。
+*   **[代码审查 (`code_review/SKILL.md`)](skills/code_review/SKILL.md)**：一种审查拉取请求 (PR) 的系统方法，检查逻辑、安全性、性能，并提供可操作的反馈。
+*   **[调试 (`debugging/SKILL.md`)](skills/debugging/SKILL.md)**：诊断过程，用于追踪问题、提出假设、收集运行时信息，并提出副作用最小的修复方案。
+*   **[重构 (`refactoring/SKILL.md`)](skills/refactoring/SKILL.md)**：在不改变外部行为的情况下安全重构代码（DRY 原则、单一职责原则）的原则。
+*   **[测试生成 (`test_generation/SKILL.md`)](skills/test_generation/SKILL.md)**：编写全面单元测试的指南，涵盖正常路径 (happy path)、边缘情况，并正确处理模拟 (mocks)。
 
-### 🔄 工作流 (`.agents/workflows/`)
+### 🔄 工作流 (`workflows/`)
 工作流定义了常见开发操作的分步标准操作程序 (SOP)。用户可以通过斜杠命令等方式调用它们来引导 AI。
 
-*   **[init-feature.md](.agents/workflows/init-feature.md)** (`/init-feature`)：审查需求、起草实现计划、创建分支以及设置代码样板的步骤。
-*   **[create-pull-request.md](.agents/workflows/create-pull-request.md)** (`/create-pull-request`)：通过运行测试、格式化、创建语义化提交、推送更改以及起草 PR 描述来完成工作的步骤。
-*   **[release.md](.agents/workflows/release.md)** (`/release`)：执行发布流程，通过确定语义化版本升级、更新变更日志 (changelog) 和给 Git 仓库打标签。
+*   **[git-feature.md](workflows/git-feature.md)** (`/git-feature`)：审查需求、起草实现计划、创建分支以及设置代码样板的步骤，用于启动新功能开发。
+*   **[git-commit.md](workflows/git-commit.md)** (`/git-commit`)：使用语义化提交信息暂存、提交和推送代码更改的标准化工作流。
+*   **[git-release.md](workflows/git-release.md)** (`/git-release`)：执行发布流程，通过确定语义化版本升级、创建标签并推送到远程仓库。
+*   **[review.md](workflows/review.md)** (`/review`)：审查代码更改，检查错误、安全问题和改进建议。
 
 ---
 
