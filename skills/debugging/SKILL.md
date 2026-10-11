@@ -1,4 +1,5 @@
 ---
+name: debugging
 description: Systematically debug an error or unexpected behavior.
 ---
 

@@ -1,4 +1,5 @@
 ---
+name: test-generation
 description: Generate unit, integration, or end-to-end tests for a given piece of code.
 ---
 
