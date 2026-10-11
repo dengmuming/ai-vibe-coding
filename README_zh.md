@@ -24,12 +24,39 @@ Vibe-coding 是一种直觉驱动、注重心流的编码方法，它将创造�
 *   **[04-documentation.md](rules/04-documentation.md)**：关于编写精确的代码注释、API 文档字符串和架构描述的指导。
 
 ### 🛠️ 技能 (`skills/`)
-技能提供了专业的方法论，AI 可以通过阅读这些方法论系统地执行复杂任务。
+技能为 AI 智能体提供了专业化的方法论和 Standard Operating Procedures（SOP），覆盖 40+ 实战技能并分类呈现：
 
-*   **[代码审查 (`code_review/SKILL.md`)](skills/code_review/SKILL.md)**：一种审查拉取请求 (PR) 的系统方法，检查逻辑、安全性、性能，并提供可操作的反馈。
-*   **[调试 (`debugging/SKILL.md`)](skills/debugging/SKILL.md)**：诊断过程，用于追踪问题、提出假设、收集运行时信息，并提出副作用最小的修复方案。
-*   **[重构 (`refactoring/SKILL.md`)](skills/refactoring/SKILL.md)**：在不改变外部行为的情况下安全重构代码（DRY 原则、单一职责原则）的原则。
-*   **[测试生成 (`test_generation/SKILL.md`)](skills/test_generation/SKILL.md)**：编写全面单元测试的指南，涵盖正常路径 (happy path)、边缘情况，并正确处理模拟 (mocks)。
+#### 1. 核心工程与交付闭环 (`dev` 研发全流程)
+*   **[dev (`dev/SKILL.md`)](skills/dev/SKILL.md)**：端到端研发全流程串联（`grill-with-docs` -> `to-spec` -> `to-tickets` -> `implement` -> `grill-code-review`）。
+*   **[to-spec (`to-spec/SKILL.md`)](skills/to-spec/SKILL.md)**：将对话中的设计推演转化为正式的技术规格书（Specification）。
+*   **[to-tickets (`to-tickets/SKILL.md`)](skills/to-tickets/SKILL.md)**：将规格书拆解为可独立验证和测试的曳光弹工单（Tickets）。
+*   **[implement (`implement/SKILL.md`)](skills/implement/SKILL.md)** / **[implement-spec](skills/implement-spec/SKILL.md)**：严格依循 Spec 与测试驱动进行增量落地。
+*   **[tdd (`tdd/SKILL.md`)](skills/tdd/SKILL.md)**：测试驱动开发，强制“先写红测试、再写绿代码、最后重构”。
+*   **[wayfinder (`wayfinder/SKILL.md`)](skills/wayfinder/SKILL.md)**：长程任务路线图规划，跨会话协同与进展推演。
+*   **[epic (`epic/SKILL.md`)](skills/epic/SKILL.md)** 与 **[dispatch (`dispatch/SKILL.md`)](skills/dispatch/SKILL.md)**：多工单批次调度与隔离 worktree 推进。
+
+#### 2. 方案质询、对齐与高信息密度可视化 (Matt Pocock & 社区)
+*   **[grill-me (`grill-me/SKILL.md`)](skills/grill-me/SKILL.md)** 与 **[grilling](skills/grilling/SKILL.md)**：苏格拉底式高强度决策树质询，逐个节点压实方案。
+*   **[grill-with-docs (`grill-with-docs/SKILL.md`)](skills/grill-with-docs/SKILL.md)**：结合既有文档深度质询并自动生成架构决策记录（ADR）。
+*   **[show-me (`show-me/SKILL.md`)](skills/show-me/SKILL.md)**：拒绝废话的高信噪比可视化表达（Mermaid 图、目录树、带注释的 Diff）。
+*   **[domain-modeling (`domain-modeling/SKILL.md`)](skills/domain-modeling/SKILL.md)**：领域驱动设计（DDD）领域建模与通用词汇表（Glossary）建立。
+*   **[prototype (`prototype/SKILL.md`)](skills/prototype/SKILL.md)**：快速抛弃型原型验证，回答关键可行性疑问。
+
+#### 3. 代码质量、代码审查与安全审计
+*   **[code-review (`code-review/SKILL.md`)](skills/code-review/SKILL.md)** 与 **[grill-code-review](skills/grill-code-review/SKILL.md)**：双轴代码审查（正确性、安全性、性能与工程品味）。
+*   **[security-audit (`security-audit/SKILL.md`)](skills/security-audit/SKILL.md)** 与 **[security-review](skills/security-review/SKILL.md)**：全方位安全审查（Cloudflare 安全审计框架 + 语言级防漏洞清单）。
+*   **[debugging (`debugging/SKILL.md`)](skills/debugging/SKILL.md)** 与 **[diagnosing-bugs](skills/diagnosing-bugs/SKILL.md)**：假设驱动的科学排错与长周期难 Bug 诊断。
+*   **[refactoring (`refactoring/SKILL.md`)](skills/refactoring/SKILL.md)**：安全重构、单一职责与消除重复代码。
+*   **[test-generation (`test-generation/SKILL.md`)](skills/test-generation/SKILL.md)**：针对边界情况与核心主路径的自动化测试套件构建。
+*   **[neat-freak (`neat-freak/SKILL.md`)](skills/neat-freak/SKILL.md)**：代码库洁癖规范与目录/配置清单自检。
+
+#### 4. 架构设计与专项脚手架
+*   **[frontend-design (`frontend-design/SKILL.md`)](skills/frontend-design/SKILL.md)**：生产级前端高水准交互与 UI 原型设计指南。
+*   **[go-init (`go-init/SKILL.md`)](skills/go-init/SKILL.md)**：实战级 Go 微服务后端脚手架规范（Gin + GORM + Redis + Zap + CLI）。
+*   **[codebase-design (`codebase-design/SKILL.md`)](skills/codebase-design/SKILL.md)** 与 **[improve-codebase-architecture](skills/improve-codebase-architecture/SKILL.md)**：深模块（Deep Modules）设计与可视化架构评估报告。
+*   **[skill-creator (`skill-creator/SKILL.md`)](skills/skill-creator/SKILL.md)**：构建、评测和打包新 Skill 的标准化流水线。
+
+> 完整第三方开源来源、上游仓库地址与许可证信息请参阅 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
 ### 🔄 工作流 (`workflows/`)
 工作流定义了常见开发操作的分步标准操作程序 (SOP)。用户可以通过斜杠命令等方式调用它们来引导 AI。

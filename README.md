@@ -23,12 +23,39 @@ Rules define the core guidelines and constraints the AI should always follow whe
 *   **[04-documentation.md](rules/04-documentation.md)**: Directions for writing precise code comments, API docstrings, and architectural descriptions.
 
 ### 🛠️ Skills (`skills/`)
-Skills provide specialized methodologies the AI can read to perform complex tasks systematically.
+Skills provide specialized methodologies the AI can read to perform complex tasks systematically. Over 40+ skills are organized into modular, battle-tested categories:
 
-*   **[Code Review (`code_review/SKILL.md`)](skills/code_review/SKILL.md)**: A systematic approach to reviewing pull requests, checking logic, security, performance, and providing actionable feedback.
-*   **[Debugging (`debugging/SKILL.md`)](skills/debugging/SKILL.md)**: A diagnostic process to trace issues, formulate hypotheses, gather runtime info, and propose minimal side-effect fixes.
-*   **[Refactoring (`refactoring/SKILL.md`)](skills/refactoring/SKILL.md)**: Principles for restructuring code safely (DRY, Single Responsibility) without altering external behavior.
-*   **[Test Generation (`test_generation/SKILL.md`)](skills/test_generation/SKILL.md)**: Guidelines for writing comprehensive unit tests targeting happy paths, edge cases, and properly handling mocks.
+#### 1. Core Engineering & Delivery Loop (`dev` workflow)
+*   **[dev (`dev/SKILL.md`)](skills/dev/SKILL.md)**: End-to-end delivery pipeline (`grill-with-docs` -> `to-spec` -> `to-tickets` -> `implement` -> `grill-code-review`).
+*   **[to-spec (`to-spec/SKILL.md`)](skills/to-spec/SKILL.md)**: Convert conversational design into structured formal engineering specifications.
+*   **[to-tickets (`to-tickets/SKILL.md`)](skills/to-tickets/SKILL.md)**: Decompose a spec into independent, testable tracer-bullet tickets.
+*   **[implement (`implement/SKILL.md`)](skills/implement/SKILL.md)** / **[implement-spec](skills/implement-spec/SKILL.md)**: Execute implementation strictly adhering to specifications and tests.
+*   **[tdd (`tdd/SKILL.md`)](skills/tdd/SKILL.md)**: Test-Driven Development workflow enforcing write-test-first discipline.
+*   **[wayfinder (`wayfinder/SKILL.md`)](skills/wayfinder/SKILL.md)**: Long-range architectural mapping for multi-session epics.
+*   **[epic (`epic/SKILL.md`)](skills/epic/SKILL.md)** & **[dispatch (`dispatch/SKILL.md`)](skills/dispatch/SKILL.md)**: Batch execution and cross-worktree task orchestration.
+
+#### 2. Planning, Stress-Testing & Visualization (Matt Pocock & Community)
+*   **[grill-me (`grill-me/SKILL.md`)](skills/grill-me/SKILL.md)** & **[grilling](skills/grilling/SKILL.md)**: Relentless Socratic interview to sharpen plans and resolve decision trees.
+*   **[grill-with-docs (`grill-with-docs/SKILL.md`)](skills/grill-with-docs/SKILL.md)**: Stress-test plans against documentation while auto-generating ADRs.
+*   **[show-me (`show-me/SKILL.md`)](skills/show-me/SKILL.md)**: High-signal output formatting (Mermaid diagrams, file trees, annotated diffs).
+*   **[domain-modeling (`domain-modeling/SKILL.md`)](skills/domain-modeling/SKILL.md)**: Build ubiquitous domain models and glossary definitions.
+*   **[prototype (`prototype/SKILL.md`)](skills/prototype/SKILL.md)**: Rapid throwaway prototyping to answer technical feasibility questions.
+
+#### 3. Code Quality, Review & Security
+*   **[code-review (`code-review/SKILL.md`)](skills/code-review/SKILL.md)** & **[grill-code-review](skills/grill-code-review/SKILL.md)**: Dual-axis review checking correctness, security, performance, and style.
+*   **[security-audit (`security-audit/SKILL.md`)](skills/security-audit/SKILL.md)** & **[security-review](skills/security-review/SKILL.md)**: Full-surface vulnerability review (Cloudflare audit methodology + language checklists).
+*   **[debugging (`debugging/SKILL.md`)](skills/debugging/SKILL.md)** & **[diagnosing-bugs](skills/diagnosing-bugs/SKILL.md)**: Hypothesis-driven diagnosis loops for complex regressions.
+*   **[refactoring (`refactoring/SKILL.md`)](skills/refactoring/SKILL.md)**: Behavior-preserving code restructuring and DRY simplification.
+*   **[test-generation (`test-generation/SKILL.md`)](skills/test-generation/SKILL.md)**: Comprehensive test suite generation for edge cases and happy paths.
+*   **[neat-freak (`neat-freak/SKILL.md`)](skills/neat-freak/SKILL.md)**: Strict repository tidiness and configuration inventory auditing.
+
+#### 4. Architecture & Specialized Frameworks
+*   **[frontend-design (`frontend-design/SKILL.md`)](skills/frontend-design/SKILL.md)**: Production-grade frontend UX/UI design guidelines.
+*   **[go-init (`go-init/SKILL.md`)](skills/go-init/SKILL.md)**: Battle-tested Go microservice scaffold (Gin + GORM + Redis + Zap + CLI).
+*   **[codebase-design (`codebase-design/SKILL.md`)](skills/codebase-design/SKILL.md)** & **[improve-codebase-architecture](skills/improve-codebase-architecture/SKILL.md)**: Designing deep modules and visual architecture reports.
+*   **[skill-creator (`skill-creator/SKILL.md`)](skills/skill-creator/SKILL.md)**: Developing, evaluating, and packaging new skills.
+
+> See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for full provenance, upstream repository URLs, and MIT licenses.
 
 ### 🔄 Workflows (`workflows/`)
 Workflows define step-by-step Standard Operating Procedures (SOPs) for common development actions. Users can invoke them to guide the AI, often via slash commands.
