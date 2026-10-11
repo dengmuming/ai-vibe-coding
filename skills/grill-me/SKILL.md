@@ -1,12 +1,7 @@
 ---
 name: grill-me
 description: A relentless interview to sharpen a plan or design.
-license: MIT
-metadata:
-  source: https://github.com/mattpocock/skills
-  upstream_commit: ed37663cc5fbef691ddfecd080dff42f7e7e350d
-  adapted_by: ai-vibe-coding
-  invocation: user
+disable-model-invocation: true
 ---
 
-Load and follow the `grilling` skill.
+Call the Skill tool with "grilling".
