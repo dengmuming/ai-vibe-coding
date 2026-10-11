@@ -32,7 +32,7 @@ Skills provide specialized methodologies the AI can read to perform complex task
 *   **[implement (`implement/SKILL.md`)](skills/implement/SKILL.md)** / **[implement-spec](skills/implement-spec/SKILL.md)**: Execute implementation strictly adhering to specifications and tests.
 *   **[tdd (`tdd/SKILL.md`)](skills/tdd/SKILL.md)**: Test-Driven Development workflow enforcing write-test-first discipline.
 *   **[wayfinder (`wayfinder/SKILL.md`)](skills/wayfinder/SKILL.md)**: Long-range architectural mapping for multi-session epics.
-*   **[epic (`epic/SKILL.md`)](skills/epic/SKILL.md)** & **[dispatch (`dispatch/SKILL.md`)](skills/dispatch/SKILL.md)**: Batch execution and cross-worktree task orchestration.
+*   **[dispatch (`dispatch/SKILL.md`)](skills/dispatch/SKILL.md)**: Batch execution and cross-worktree task orchestration.
 
 #### 2. Planning, Stress-Testing & Visualization (Matt Pocock & Community)
 *   **[grill-me (`grill-me/SKILL.md`)](skills/grill-me/SKILL.md)** & **[grilling](skills/grilling/SKILL.md)**: Relentless Socratic interview to sharpen plans and resolve decision trees.

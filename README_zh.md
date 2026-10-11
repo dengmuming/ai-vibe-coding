@@ -33,7 +33,7 @@ Vibe-coding 是一种直觉驱动、注重心流的编码方法，它将创造�
 *   **[implement (`implement/SKILL.md`)](skills/implement/SKILL.md)** / **[implement-spec](skills/implement-spec/SKILL.md)**：严格依循 Spec 与测试驱动进行增量落地。
 *   **[tdd (`tdd/SKILL.md`)](skills/tdd/SKILL.md)**：测试驱动开发，强制“先写红测试、再写绿代码、最后重构”。
 *   **[wayfinder (`wayfinder/SKILL.md`)](skills/wayfinder/SKILL.md)**：长程任务路线图规划，跨会话协同与进展推演。
-*   **[epic (`epic/SKILL.md`)](skills/epic/SKILL.md)** 与 **[dispatch (`dispatch/SKILL.md`)](skills/dispatch/SKILL.md)**：多工单批次调度与隔离 worktree 推进。
+*   **[dispatch (`dispatch/SKILL.md`)](skills/dispatch/SKILL.md)**：多工单批次调度与隔离 worktree 推进。
 
 #### 2. 方案质询、对齐与高信息密度可视化 (Matt Pocock & 社区)
 *   **[grill-me (`grill-me/SKILL.md`)](skills/grill-me/SKILL.md)** 与 **[grilling](skills/grilling/SKILL.md)**：苏格拉底式高强度决策树质询，逐个节点压实方案。
