@@ -27,7 +27,7 @@ Vibe-coding 是一种直觉驱动、注重心流的编码方法，它将创造�
 技能为 AI 智能体提供了专业化的方法论和 Standard Operating Procedures（SOP），覆盖 40+ 实战技能并分类呈现：
 
 #### 1. 核心工程与交付闭环 (`dev` 研发全流程)
-*   **[dev (`dev/SKILL.md`)](skills/dev/SKILL.md)**：端到端研发全流程串联（`grill-with-docs` -> `to-spec` -> `to-tickets` -> `implement` -> `grill-code-review`）。
+*   **[dev (`dev/SKILL.md`)](skills/dev/SKILL.md)**：端到端五段式研发全流程串联（`grill-with-docs`/`grill-me` -> `to-spec` -> `to-tickets` -> `implement-spec`/`implement` -> `code-review`），流程产物默认沉淀在 `.scratch/<feature-slug>/`。
 *   **[to-spec (`to-spec/SKILL.md`)](skills/to-spec/SKILL.md)**：将对话中的设计推演转化为正式的技术规格书（Specification）。
 *   **[to-tickets (`to-tickets/SKILL.md`)](skills/to-tickets/SKILL.md)**：将规格书拆解为可独立验证和测试的曳光弹工单（Tickets）。
 *   **[implement (`implement/SKILL.md`)](skills/implement/SKILL.md)** / **[implement-spec](skills/implement-spec/SKILL.md)**：严格依循 Spec 与测试驱动进行增量落地。

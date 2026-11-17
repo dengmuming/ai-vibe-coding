@@ -26,7 +26,7 @@ Rules define the core guidelines and constraints the AI should always follow whe
 Skills provide specialized methodologies the AI can read to perform complex tasks systematically. Over 40+ skills are organized into modular, battle-tested categories:
 
 #### 1. Core Engineering & Delivery Loop (`dev` workflow)
-*   **[dev (`dev/SKILL.md`)](skills/dev/SKILL.md)**: End-to-end delivery pipeline (`grill-with-docs` -> `to-spec` -> `to-tickets` -> `implement` -> `grill-code-review`).
+*   **[dev (`dev/SKILL.md`)](skills/dev/SKILL.md)**: End-to-end 5-stage delivery pipeline (`grill-with-docs`/`grill-me` -> `to-spec` -> `to-tickets` -> `implement-spec`/`implement` -> `code-review`), persisting artifacts under `.scratch/<feature-slug>/`.
 *   **[to-spec (`to-spec/SKILL.md`)](skills/to-spec/SKILL.md)**: Convert conversational design into structured formal engineering specifications.
 *   **[to-tickets (`to-tickets/SKILL.md`)](skills/to-tickets/SKILL.md)**: Decompose a spec into independent, testable tracer-bullet tickets.
 *   **[implement (`implement/SKILL.md`)](skills/implement/SKILL.md)** / **[implement-spec](skills/implement-spec/SKILL.md)**: Execute implementation strictly adhering to specifications and tests.
