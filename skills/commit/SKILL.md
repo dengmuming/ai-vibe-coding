@@ -12,10 +12,9 @@ metadata:
 
 提交前按本 skill 走一遍，产出符合团队规范的 commit 与分支名。规范全文见 `references/git-convention.md`。
 
-## 两条铁律
+## 铁律
 
-1. **AI 协作模式下不得自行提交**：`git commit` 前必须把标题、正文、文件清单给用户确认，得到明确同意再执行。
-2. **显式加文件**：`git add -- <路径1> <路径2>`。禁止 `git add -A`、`git add .`、`git commit -a`。
+- **显式加文件**：`git add -- <路径1> <路径2>`。禁止 `git add -A`、`git add .`、`git commit -a`。
 
 ## 提交流程
 
@@ -26,7 +25,7 @@ metadata:
 5. **写正文**（可选）：标题后空一行，讲动机与影响，不复述 diff。
 6. **拆分**：一个提交 = 一个主题 + 一个 scope。混了就拆。
 7. **版本联动**：仓库有版本/changelog 约定时同步更新（见下）。
-8. **等用户确认** → `git add -- <paths>` → `git commit`。
+8. **暂存并提交**：`git add -- <paths>` → `git commit`。
 
 ## 标题格式
 
@@ -106,7 +105,6 @@ printf '%s\n' "$msg" | grep -Eq "$pattern" || echo "INVALID SUBJECT"
 - [ ] 一个提交一个主题一个 scope
 - [ ] `git add -- <路径>` 逐个添加
 - [ ] 版本 / changelog 已同步（如仓库有约定）
-- [ ] 用户已明确同意提交
 
 ## 正反例
 
